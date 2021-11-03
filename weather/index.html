@@ -11,49 +11,54 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="input">
-            <input type="text" class="caja__texto" placeholder="Your city">
-        </div>
-        <div class="weather__data">
-            <div class="weather__izq">
-                <p>Day</p>
-                <p>Humidity</p>
-                <p>pressure</p>
-            </div>
-            <div class="weather__img">
-                <img src="img/sol.png" alt="sol">
-            </div>
-            <div class="weather__temperature"><span class="temperarure">20</span>°C</div>
-        </div>
-        <div class="forecast">
-            <article class="article__forecast">
-                <p>Day</p>
-                <img src="img/sol.png" alt="sol">
-                <p>Texto</p>
-            </article>
-            <article class="article__forecast">
-                <p>Day</p>
-                <img src="img/sol.png" alt="sol">
-                <p>Texto</p>
-            </article>
-            <article class="article__forecast">
-                <p>Day</p>
-                <img src="img/sol.png" alt="sol">
-                <p>Texto</p>
-            </article>
-            <article class="article__forecast">
-                <p>Day</p>
-                <img src="img/sol.png" alt="sol">
-                <p>Texto</p>
-            </article>
-            <article class="article__forecast">
-                <p>Day</p>
-                <img src="img/sol.png" alt="sol">
-                <p>Texto</p>
-            </article>
 
+    <div class="weather">
+        <input type="search" class="weather__search" placeholder="Your city">
 
+        <div class="weather__today">
+            <div class="weather__details">
+                <h2 class="weather__city">City</h2>
+                <p class="weather__day">Thursday</p>
+                <div class="weather__current">
+                    <p class="weather__indicator weather__indicator_humidity"><span>50</span>%</p>
+                    <p class="weather__indicator weather__indicator_wind"><span>300</span>m/c</p>
+                    <p class="weather__indicator weather__indicator_presure"><span>1024</span>hPa</p>
+                </div>
+            </div>
+            <img src="img/sol.png" alt="sol" class="weather__image">
+            <div class="weather__temperature"><span class="temperature">20</span>°C</div>
+        </div>
+        <div class="weather__forecast">
+            <article class="article__forecast_item">
+
+                <img src="img/sol.png" alt="sol" class="weather__forecast__image">
+                <h2 class="weather__forecast__day">Day</h2>
+                <p class="weather__forecast_temperature">Texto</p>
+            </article>
+            <article class="article__forecast_item">
+
+                <img src="img/sol.png" alt="sol" class="weather__forecast__image">
+                <h2 class="weather__forecast__day">Day</h2>
+                <p class="weather__forecast_temperature">Texto</p>
+            </article>
+            <article class="article__forecast_item">
+
+                <img src="img/sol.png" alt="sol" class="weather__forecast__image">
+                <h2 class="weather__forecast__day">Day</h2>
+                <p class="weather__forecast_temperature">Texto</p>
+            </article>
+            <article class="article__forecast_item">
+
+                <img src="img/sol.png" alt="sol" class="weather__forecast__image">
+                <h2 class="weather__forecast__day">Day</h2>
+                <p class="weather__forecast_temperature">Texto</p>
+            </article>
+            <article class="article__forecast_item">
+
+                <img src="img/sol.png" alt="sol" class="weather__forecast__image">
+                <h2 class="weather__forecast__day">Day</h2>
+                <p class="weather__forecast_temperature">Texto</p>
+            </article>
 
         </div>
     </div>
