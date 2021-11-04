@@ -1,4 +1,6 @@
-const apiKey = 'c7bca27bebdbb605ecbe6d909da1bd51';
+import api from './config';
+
+const apiKey = api;
 let search = document.querySelector('.weather__search');
 let city = document.querySelector('.weather__city');
 let day = document.querySelector('.weather__day');
