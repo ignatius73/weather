@@ -1,6 +1,6 @@
-import api from './config';
-
-const apiKey = api;
+import '../css/styles.css';
+import logo from '../img/logo.svg';
+const apiKey = '4d73abedbb556cf32e38e1fb897d1570';
 let search = document.querySelector('.weather__search');
 let city = document.querySelector('.weather__city');
 let day = document.querySelector('.weather__day');
@@ -9,6 +9,7 @@ let wind = document.querySelector('.weather__indicator_wind>.value');
 let pressure = document.querySelector('.weather__indicator_presure>.value');
 let temperature = document.querySelector('.weather__temperature>.temperature');
 
+document.getElementById('logo').innerHTML = `<img src="${logo}" alt="logo">`;
 let getWeatherByCityName = async(city) => {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
     return await response.json();
@@ -16,9 +17,11 @@ let getWeatherByCityName = async(city) => {
 }
 
 search.addEventListener('keydown', async(e)=>{
+    
     if( e.keyCode === 13){
         let weather = await getWeatherByCityName(search.value);
-        console.log(weather)
+        
+        
         updateWeather(weather)
     }
 })
@@ -45,3 +48,4 @@ let updateWeather = (data ) =>{
                                 Math.round(data.main.temp)
 
 }
+
