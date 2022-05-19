@@ -1,4 +1,3 @@
-import api from './config';
 
 const apiKey = api;
 let search = document.querySelector('.weather__search');
