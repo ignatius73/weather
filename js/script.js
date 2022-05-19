@@ -1,6 +1,6 @@
 import '../css/styles.css';
 import logo from '../img/logo.svg';
-const apiKey = '4d73abedbb556cf32e38e1fb897d1570';
+
 let search = document.querySelector('.weather__search');
 let city = document.querySelector('.weather__city');
 let day = document.querySelector('.weather__day');
